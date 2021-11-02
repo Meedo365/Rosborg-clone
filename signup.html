@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Order</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="whole center wid">
+        <!-- navigation -->
+        <div class="nav">
+            <div class="nav1">
+                <div class="nav11 flex scc algc">
+                    <div class="nav111">
+                        <p>SEE OUR LARGE SALE HERE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav2 flex sbw algc">
+                <div class="nav21">
+                    <a href="./product.html">PRODUCT</a>
+                    <a href="#" id="of">OFFER</a>
+                    <a href="#">MENU</a>
+                </div>
+                <div class="nav22"><a href="./index.html"><img src="./images/rosborg logo.png" alt=""></a></div>
+                <div class="nav23">
+                    <input type="text" placeholder="SEARCH PRODUCTS AND BRANDS">
+                    <a href="./cart.html">BASKET</a>
+                </div>
+            </div>
+        </div>
+        <div class="order1">
+            <h2>ORDER</h2>
+        </div>
+        <div class="order flex">
+            <div class="orderTable">
+                <div class="thorder">SHOPPING CART</div>
+                <div class="tborder">
+                    <div class="row1">
+                        <div class="trow1 flex sbw">
+                            <p>Quantity</p>
+                            <p>Description</p>
+                            <p>Price</p>
+                        </div>
+
+                    </div>
+                    <div class="row2">
+                        <div class="trow2 flex sbw">
+                            <p>Shipping: GLS</p>
+                            <p>cost</p>
+                        </div>
+                        <div class="trow2 flex sbw">
+                            <p>Total purchase:</p>
+                            <p>cost</p>
+                        </div>
+                        <div class="trow2 flex sbw">
+                            <p>Including VAT:</p>
+                            <p>cost</p>
+                        </div>
+                        <div class="trow2 flex sbw">
+                            <p>Payment fee:</p>
+                            <p>cost</p>
+                        </div>
+                        <div class="trow3 flex sbw">
+                            <p id="rowTotal"><b>Total:</b></p>
+                            <p>cost</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="register">
+                <form class="regForm">
+                    <p>ADDRESS</p> <br>
+                    <div class="regRow">
+                        <label for="cust">CUSTOMER TYPE</label> <br>
+                        <select name="" id="cust">
+                            <option value="">Private</option>
+                            <option value="">Coporation</option>
+                            <option value="">EAN</option>
+                        </select>
+                    </div>
+                    <div class="regRow">
+                        <label for="">FIRST NAME*</label> <br>
+                        <input type="text" placeholder="First name" required>
+                    </div>
+                    <div class="regRow">
+                        <label for="">SURNAME *</label> <br>
+                        <input type="text" placeholder="Last name" required>
+                    </div>
+                    <div class="regRow">
+                        <label for="">ADDRESS *</label> <br>
+                        <input type="text" placeholder="Address" required>
+                    </div>
+                    <div class="regRow">
+                        <label for="">ZIP CODE *</label> <br>
+                        <input type="text" placeholder="Zip code" required>
+                    </div>
+                    <div class="regRow">
+                        <label for="">BY *</label> <br>
+                        <input type="text" placeholder="town" required>
+                    </div>
+                    <div class="regRow">
+                        <label for="">LAND *</label> <br>
+                        <select name="" id="" required>
+                            <option value="">Australia</option>
+                            <option value="">Belgium</option>
+                            <option value="">Canada</option>
+                            <option value="">Denmark</option>
+                            <option value="">Finland</option>
+                            <option value="">France</option>
+                            <option value="">Faroe Islands</option>
+                            <option value="">Greece</option>
+                            <option value="">Greenland</option>
+                        </select>
+
+                    </div>
+                    <div class="regRow">
+                        <label for="">EMAIL *</label> <br>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="regRow">
+                        <label for="">TELEPHONE NUMBER *</label> <br>
+                        <input type="tel" placeholder="Telephone number" required>
+                    </div>
+                    <div class="regRow1">
+                        <input type="radio" placeholder="" id="tik">
+                        <label for="tik"><small><small>The order must be delivered to another address.</small></label>
+                    </div>
+                    <br>
+                    <p>SHIPPING</p>
+                    <br>
+                    <small>
+                        <p>
+                        <p>Select shipment (Denmark)</p>
+                        <input type="radio" id="gls" name="ship">
+                        <p class="gls"><label for="gls"><b>GLS</b><br>
+                                0 DKK <br>
+                                Free of charge! <br>
+                                Delivery to GLS pakkeshop-only small packages<br>
+                                Free shipping on purchases over 0 DKK
+                            </label> </p>
+                        <input type="radio" id="glsprv" name="ship">
+                        <p class="gls"><label for="glsprv"><b>GLS Private</b><br>
+                                100 DKK <br>
+                                Delivery to the door
+                            </label> <br></p>
+                        <input type="radio" id="carrier" name="ship">
+                        <p class="gls"><label for="carrier"><b>Carrier</b><br>
+                                0 DKK <br>
+                                Free of charge! <br>
+                                Curbstone delivery-used only for larger furniture<br>
+                                Free shipping on purchases over DKK 3,000
+                            </label> </p>
+                        <hr>
+                        <p class="pt note1">NOTE ON ORDER AND SHIPPING</p>
+                        <input type="text" class="note" placeholder="Note on order and shipping"> <br>
+                        <p>
+                        <p id="ppp">PAYMENT</p>
+                        <input type="radio" name="payment" id="dank">
+                        <p class="paym"><label for="dank">Dankort, Visa/ Dankort Mastercard, Visa <br>
+                                <p class="pay flex">
+                                    <img src="./images/dankort.svg" alt="">
+                                    <img src="./images/mastercard.svg" alt="">
+                                    <img src="./images/visa.svg" alt="">
+                                </p>
+                            </label></p>
+                        <input type="radio" name="payment" id="mob">
+                        <p class="paym"><label for="mob">MobilePay <br>
+                                <p class="pay1">
+                                    <img src="./images/mobilepay.svg" alt="">
+                                </p>
+                            </label></p>
+
+                        <input type="radio" name="payment" id="appl">
+                        <p class="paym"><label for="appl">ApplePay<br>
+                                <p class="pay">
+                                    <img src="./images/applepay.svg" alt="">
+                                </p>
+                            </label></p>
+
+                        <input type="radio" name="payment" id="tran">
+                        <p class="paym"><label for="tran"><b>Account transfer</b><br>
+                                NOTE! By bank transfer, you are not protected by <br>
+                                the objection scheme.
+                            </label></p>
+
+                        <input type="radio" name="payment" id="spar">
+                        <p class="paym"><label for="spar">Sparxpres<br>
+                                <p class="pay1">
+                                    <img src="./images/sparxpres.svg" alt="">
+                                </p>
+                            </label></p> <br>
+                        <hr> <br>
+                        <input type="checkbox" id="chk">
+                        <p><label for="chk">I have read and accept the terms of sale and <br> delivery.</label></p>
+                        </p>
+                        </p>
+                        <p class="flex paybtn">
+                            <button id="bk"><small>BACK</small></button>
+                            <button id="ap"><small>APPROVE AND PAY</small></button>
+                        </p>
+                    </small>
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <div class="wel2 flex sbw wid">
+            <div class="lg">
+                <h6>FREE SHIPPING IN DENMARK</h6>
+                <p>WHEN BUYING ONLINE</p>
+            </div>
+            <div class="lg">
+                <h6>VISIT US</h6>
+                <p>IN HADSTEN & AARHUS</p>
+            </div>
+            <div class="lg">
+                <h6>SUPPORT</h6>
+                <p>Call <a>+45 8698 9382</a></p>
+            </div>
+            <div class="lg">
+                <h6>14 DAY RETURN POLICY</h6>
+                <p>WHEN BUYING ONLINE</p>
+            </div>
+        </div>
+        <hr class="wid">
+        <!-- footer  -->
+        <footer>
+            <div class="rosb wid">
+                <div class="fup flex sbw">
+                    <div class="colrob1">
+                        <h4>ROSBORG MØBLER</h4>
+                        <br>
+                        <p>Rosborg Møbler has 1200 m2 of retail space in scenic <br>
+                            surroundings on the old main road between Aarhus <br>
+                            and Randers and a 250 m2 store in Aarhus - right next <br>
+                            to Magasin's car park.
+                        </p>
+                        <br>
+                        <p>We always strive to have an inviting exhibition, which <br>
+                            presents both the design classics that have been the <br>
+                            backbone of Rosborg's range since the start in 1966, <br>
+                            and a wide selection of new design furniture from <br>
+                            home and abroad
+                        </p>
+                        <br>
+                        <br>
+                        <h4>FOLLOW US</h4>
+                        <br>
+                        <div class="fols flex">
+                            <img src="./images/liik.jpg" alt="">
+                            <img src="./images/liik.jpg" alt="">
+                            <img src="./images/liik.jpg" alt="">
+                        </div>
+                        <br>
+                        <img src="./images/gazelle-logo.svg" id="gaz" alt="">
+                        <br>
+                        <br>
+                        <img src="./images/knaek-cancer-2020.svg" id="kna" alt="">
+                    </div>
+                    <div class="colrob2">
+                        <h4>INFORMATION</h4>
+                        <br>
+                        <p><a href="">About Rosborg</a></p>
+                        <p><a href="">Mobler</a></p>
+                        <p><a href="">Contact</a></p>
+                        <p><a href="">Financing</a></p>
+                        <p><a href="">International orders</a></p>
+                        <br>
+
+                        <h4>ONLINE ORDERS <br> ARE SHIPPED WITH</h4>
+
+                        <p>GLS</p>
+                        <p>Step Transport</p>
+
+                    </div>
+                    <div class="colrob2">
+                        <h4>SELECTED BRANDS</h4> <br>
+                        <a href="">&tradition</a> <br>
+                        <a href="">Andersen Furniture</a> <br>
+                        <a href="">Carl Hansen & Son</a> <br>
+                        <a href="">Eilersen</a> <br>
+                        <a href="">Erik Jorgensen</a> <br>
+                        <a href="">Flos</a> <br>
+                        <a href="">Fredericia</a> <br>
+                        <a href="">Frit Hansen</a> <br>
+                        <a href="">Getama</a> <br>
+                        <a href="">Gubi</a> <br>
+                        <a href="">HAY</a> <br>
+                        <a href="">House of Finn Juhi</a> <br>
+                        <a href="">Louis Poulsen</a> <br>
+                        <a href="">Mogens Hansen</a> <br>
+                        <a href="">Montana</a> <br>
+                        <a href="">PP Furniture</a> <br>
+                        <a href="">Naver Collection</a><br>
+                        <a href="">Verpan</a><br>
+                        <a href="">Vitra</a><br>
+                    </div>
+                    <div class="colrob3">
+                        <h4>HADSTEN</h4> <br>
+                        <p>Astrupvej 1 <br> 8370 Hadsten</p>
+
+                        <p>Send mail <br>+45 8698 9322</p>
+
+                        <p>CVR No. 21866008</p>
+
+                        <h4>OPENING HOURS</h4>
+
+                        <p>Mon-Fri 10.00-17.30</p>
+
+                        <p>Saturday 10.00-14.00</p>
+
+                        <p>
+                            1st Sunday of the <br> month <br>
+                            we are open 10.00- <br>
+                            15.00
+                        </p>
+                        <p>
+                            In relation to COVID- <br> 19, we take all <br>
+                            precautions so that <br> we can take good <br>
+                            care of each other. <br>
+                            Remember bandages <br> when you visit us!
+                        </p>
+                    </div>
+                    <div class="colrob3">
+                        <h4>AARHUS</h4> <br>
+                        <p>Aboulevarden 70<br> 8000 Aarhus C</p>
+
+                        <p>Send mail <br>+45 8698 9322</p>
+
+                        <p>CVR No. 21866008</p>
+
+                        <h4>OPENING HOURS</h4>
+
+                        <p>Monday 11.00-17.30</p>
+                        <p>Tue-Fri 10.00-17.30</p>
+
+                        <p>Saturday 10.00-15.00</p>
+
+                        <p>
+                            1st Sunday of the <br> month <br>
+                            we are open 10.00-<br>
+                            15.00
+                        </p>
+                        <p>
+                            In relation to COVID- <br> 19, we take all <br>
+                            precautions so that <br> we can take good <br>
+                            care of each other. <br>
+                            Remember bandages <br> when you visit us!
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="fdwn flex sbw algc">
+                    <div class="term flex">
+                        <p>2021 ROSBORD</p>
+                        <a href="">TERMS OF TRADE</a>
+                        <a href="">PRIVACY POLICY</a>
+                        <a href="">COOKIES</a>
+                    </div>
+                    <div class="lgg flex">
+                        <img src="./images/cssda-special-kudos-black.png" alt="">
+                        <img src="./images/awwwards.svg" alt="">
+                    </div>
+                </div>
+                <div class="fbtm flex sbw algc">
+                    <div class="fbtm1">
+                        <img src="./images/payment-methods-v3.svg" alt="">
+                    </div>
+                    <div class="fbtm2">
+                        <img src="./images/e-maerket.png" alt="">
+                        <img src="./images/trust-ecommerce-europe.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
